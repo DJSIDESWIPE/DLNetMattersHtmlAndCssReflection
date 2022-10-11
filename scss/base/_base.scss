@@ -1,0 +1,43 @@
+footer{
+    background-color:#333645;
+    color: white;
+}
+.newsletter {
+    background-color: #444;
+}
+.btn-telecoms{
+    color:#d64541;
+    border:#d64541;
+}
+.btn-web{
+    color:#926fb1;
+    border:#926fb1;
+}
+.btn-software{
+    color:#67809f;
+    border:#67809f;
+}
+.btn-google{
+    color:#4387f6;
+}
+.btn-trustpilot{
+    color:#00b67b;
+}
+.brand-background{
+    background-color:#333645;
+}
+.btn-primary-inverse{
+    background-color:#272936;
+}
+.required{
+    color:red;
+}
+li{
+    list-style:none;
+}
+.glythicon{
+    position:relative;
+}
+.glythicon-search::before{
+    content:"\E003";
+}
