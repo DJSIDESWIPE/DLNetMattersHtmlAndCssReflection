@@ -18,16 +18,24 @@ footer{
     border:#67809f;
 }
 .btn-google{
-    color:#4387f6;
+    background-color:#4387f6;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
 }
 .btn-trustpilot{
-    color:#00b67b;
+    background-color:#00b67b;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
 }
 .brand-background{
     background-color:#333645;
 }
-.btn-primary-inverse{
+.btn-inverse{
     background-color:#272936;
+    color: white;
+    padding: 20px;
 }
 .required{
     color:red;
@@ -40,4 +48,122 @@ li{
 }
 .glythicon-search::before{
     content:"\E003";
+}
+body {
+    margin:auto;
+}
+#copyright{
+    Padding-top: 5px;
+    border-top: solid white 1px;
+}
+h4 {
+    text-transform: uppercase;
+}
+li>a{
+    color:white;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+#ChatBox{
+    position: fixed;
+    bottom: 20px ;
+    right: 20px;
+    border-radius:50%;
+    height: 60px;
+    width: 60px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+main,footer,form{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.container{
+    display: flex;
+    width:95%;
+    margin:auto;
+    justify-content: space-around;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col{
+    flex-direction: column;
+    &-3{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+#Subscribe{
+    background-color: lightgray;
+}
+button {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+}
+.Our-Services{
+    border: solid white 1px ;
+    border-radius: 5px 5px 5px 5px;
+    padding:5em white;
+    box-shadow: 5px 10px;
+}
+.item {
+    flex: 50%;
+    margin: 5px;
+    &-viewall{
+        margin-left: auto;
+    }
+    &-button{
+        width:auto;
+        margin: 5px;
+        
+    }
+}
+.posted{
+    padding-top: 20px;
+    border-top: solid 1px grey;
+}
+.latestnewsimage{
+    width:100%;
+}
+.news-item{
+    &1{
+        &-btn{
+            background-color: #67809f;
+            border-top: 5px 5px;
+            border-bottom: 5px 5px;
+            border-style: none;
+        }
+        color:#67809f;
+    }
+    &2{
+        &-btn{
+            background-color: #926fb1;
+            border-top: 5px 5px;
+            border-bottom: 5px 5px;
+            border-style: none;
+        }
+        color:#926fb1;
+    }
+    &3{
+        &-btn{
+            background-color: #d64541;
+            border-top: 5px 5px;
+            border-bottom: 5px 5px;
+            border-style: none;
+        }
+        color:#d64541;
+    }
+}
+.reverse-color{
+    background-color: #333645;
+    color:white;
 }

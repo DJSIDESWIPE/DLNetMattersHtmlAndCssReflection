@@ -1,70 +1,204 @@
-/* line 1, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 footer {
   background-color: #333645;
   color: white;
 }
 
-/* line 5, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .newsletter {
   background-color: #444;
 }
 
-/* line 8, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .btn-telecoms {
   color: #d64541;
   border: #d64541;
 }
 
-/* line 12, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .btn-web {
   color: #926fb1;
   border: #926fb1;
 }
 
-/* line 16, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .btn-software {
   color: #67809f;
   border: #67809f;
 }
 
-/* line 20, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .btn-google {
-  color: #4387f6;
+  background-color: #4387f6;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
 }
 
-/* line 23, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .btn-trustpilot {
-  color: #00b67b;
+  background-color: #00b67b;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
 }
 
-/* line 26, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .brand-background {
   background-color: #333645;
 }
 
-/* line 29, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
-.btn-primary-inverse {
+.btn-inverse {
   background-color: #272936;
+  color: white;
+  padding: 20px;
 }
 
-/* line 32, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .required {
   color: red;
 }
 
-/* line 35, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 li {
   list-style: none;
 }
 
-/* line 38, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .glythicon {
   position: relative;
 }
 
-/* line 41, ../../../OneDrive/Documents/GitHub/NetMattersHtmlandCSSreflection/scss/base/_base.scss */
 .glythicon-search::before {
   content: "\E003";
 }
 
-/*# sourceMappingURL=NetMattersStyleSheet.css.map */
+body {
+  margin: auto;
+}
+
+#copyright {
+  Padding-top: 5px;
+  border-top: solid white 1px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+
+li > a:hover {
+  text-decoration: underline;
+}
+
+#ChatBox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+
+#ChatBox:hover {
+  cursor: pointer;
+}
+
+main, footer, form {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.row {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col-3 {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#Subscribe {
+  background-color: lightgray;
+}
+
+button {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.Our-Services {
+  border: solid white 1px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5em white;
+  box-shadow: 5px 10px;
+}
+
+.item {
+  flex: 50%;
+  margin: 5px;
+}
+
+.item-viewall {
+  margin-left: auto;
+}
+
+.item-button {
+  width: auto;
+  margin: 5px;
+}
+
+.posted {
+  padding-top: 20px;
+  border-top: solid 1px grey;
+}
+
+.latestnewsimage {
+  width: 100%;
+}
+
+.news-item1 {
+  color: #67809f;
+}
+
+.news-item1-btn {
+  background-color: #67809f;
+  border-top: 5px 5px;
+  border-bottom: 5px 5px;
+  border-style: none;
+}
+
+.news-item2 {
+  color: #926fb1;
+}
+
+.news-item2-btn {
+  background-color: #926fb1;
+  border-top: 5px 5px;
+  border-bottom: 5px 5px;
+  border-style: none;
+}
+
+.news-item3 {
+  color: #d64541;
+}
+
+.news-item3-btn {
+  background-color: #d64541;
+  border-top: 5px 5px;
+  border-bottom: 5px 5px;
+  border-style: none;
+}
+
+.reverse-color {
+  background-color: #333645;
+  color: white;
+}
