@@ -3,6 +3,15 @@ footer {
   color: white;
 }
 
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+p, h2, h3 {
+  margin-left: 15px;
+}
+
 .newsletter {
   background-color: #444;
 }
@@ -36,14 +45,14 @@ footer {
   margin-top: auto;
 }
 
-.brand-background {
-  background-color: #333645;
-}
-
 .btn-inverse {
   background-color: #272936;
   color: white;
   padding: 20px;
+}
+
+.brand-background {
+  background-color: #333645;
 }
 
 .required {
@@ -62,8 +71,11 @@ li {
   content: "\E003";
 }
 
-body {
+.center {
   margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
 }
 
 #copyright {
@@ -104,9 +116,9 @@ main, footer, form {
 
 .container {
   display: flex;
-  width: 95%;
   margin: auto;
   justify-content: space-around;
+  gap: 10px;
 }
 
 .row {
@@ -129,7 +141,6 @@ main, footer, form {
 
 button {
   text-transform: uppercase;
-  margin-bottom: 5px;
   cursor: pointer;
   border-radius: 8px;
   padding: 5px;
@@ -139,7 +150,6 @@ button {
   border: solid white 1px;
   border-radius: 5px 5px 5px 5px;
   padding: 5em white;
-  box-shadow: 5px 10px;
 }
 
 .item {
@@ -153,7 +163,12 @@ button {
 
 .item-button {
   width: auto;
-  margin: 5px;
+  margin-top: auto;
+}
+
+.item-services {
+  box-shadow: 0 0 5px #bebebe;
+  height: 300px;
 }
 
 .posted {
@@ -201,4 +216,12 @@ button {
 .reverse-color {
   background-color: #333645;
   color: white;
+}
+
+.clientthoughts {
+  align-items: stretch;
+}
+
+.images {
+  width: 100%;
 }
