@@ -2,6 +2,11 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/NetMattersStyleSheet.css">
+		<script>
+			function hide() {
+				document.getElementById("cookies").style.display = "none";
+			};
+		</script>
 	</head>
 	<body>
 		<header>
@@ -12,11 +17,19 @@
 			<button><span class="glythicon glythicon-search"></span></button>
 		</header>
 		<button id="ChatBox"> Chat </button>
+		<div id="cookies" class="center">
+			<h2>Cookie Policy</h2>
+			<p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.</p>
+			<div class="container row">
+				<button class="cookie-btn settings">Change Settings</button>
+				<button class="cookie-btn accept" onclick="hide()"> Accept Cookies</button>
+			</div>
+		</div>
 		<main>
 			<div class="reverse-color navbar">
 				<div class="container center">
 					<div>
-						<img>
+						<i class="fa"></i>
 						<p><small>bespoke</small><br>Software</p>
 					</div>
 					<div>
@@ -129,14 +142,14 @@
 						and cost model that ensures you get the most from our relationship in an upfront manner.</p>
 					<button class="btn-inverse">Read More</button>
 				</div>
-				<div class="container col center clientthoughts">
+				<div class="container col center">
 					<h2>What our Clients Think</h2>
-					<img>
+					<img >
 					<p><b>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and
 						digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our 
 						(high!) expectations and went over and above to ensure we were satisfied clients - and we are!</b></p>
 					<p>Eleanor Bishop, Head of Marketing - Ashcroft Partnership LLP</p>
-					<div class="item-button">
+					<div class="container row item-button">
 						<button class="btn-google">Google Reviews</button>
 						<button class="btn-trustpilot">Trustpilot Reviews</button>
 					</div>
@@ -223,8 +236,6 @@
 							<li><a href="#">Developer Training</a></li>
 						</ul>
 					</div>
-				</div>
-				<div class="container center">
 					<div class="offices">
 						<h4>Cambridge Office</h4>
 						<ul>
