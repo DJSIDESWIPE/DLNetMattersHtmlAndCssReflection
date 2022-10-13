@@ -107,6 +107,12 @@ li>a{
         text-decoration: underline;
     }
 }
+.footer-links{
+    color:white;
+    &:visited{
+        color: white;
+    }
+}
 #ChatBox{
     position: fixed;
     bottom: 20px ;
@@ -114,6 +120,8 @@ li>a{
     border-radius:50%;
     height: 60px;
     width: 60px;
+    color: white;
+    background-color: #333645;
     &:hover{
         cursor: pointer;
     }
