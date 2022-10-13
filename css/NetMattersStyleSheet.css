@@ -72,6 +72,7 @@ p, h2, h3 {
   background-color: #272936;
   color: white;
   padding: 20px;
+  align-self: flex-start;
 }
 
 .brand-background {
@@ -98,12 +99,13 @@ li {
   margin: auto;
   margin-left: 10px;
   margin-right: 10px;
-  width: 90%;
+  width: 95%;
 }
 
-#copyright {
+.copyright {
   padding-top: 5px;
   border-top: solid white 1px;
+  width: 95;
 }
 
 p {
@@ -301,13 +303,12 @@ button {
   align-items: flex-end;
 }
 
-.fa-phone::after {
-  content: "\f09e";
+i {
+  align-self: center;
 }
 
-.fa-signal {
-  position: absolute;
-  clip: rect(0px, 16px, 12px, 0px);
+.icon-TS {
+  color: #d64541;
 }
 
 /*!
