@@ -135,6 +135,19 @@ main,footer,form{
         width:100%;
         flex-grow: auto;
     }
+    &-3{
+        column-count: 3;
+        width:100%;
+        margin-left: 0;
+        flex:auto;
+    }
+    &-4{
+        flex:auto;
+        margin-left: 0;
+        column-count: 4;
+        width:100%
+    }
+    
 }
 .col{
     display: flex;
@@ -169,6 +182,7 @@ button {
     border-radius: 5px 5px 5px 5px;
     padding:5em white;
     text-align: center;
+    margin-left: 2em;
 }
 #h2-left{
     text-align: left;
@@ -200,34 +214,49 @@ button {
     padding-top: 20px;
     border-top: solid 1px grey;
 }
+.gap {
+    gap: 20px 20px;
+}
 .latestnewsimage{
     width:100%;
+}
+.news{
+    margin-left: 10px;
 }
 .news-item{
     &1{
         &-btn{
             background-color: #67809f;
+            color:white;
             border-top: 5px 5px;
             border-bottom: 5px 5px;
+            padding: 10px;
             border-style: none;
+            align-self: start;
         }
         color:#67809f;
     }
     &2{
         &-btn{
             background-color: #926fb1;
+            color:white;
             border-top: 5px 5px;
             border-bottom: 5px 5px;
+            padding: 10px;
             border-style: none;
+            align-self: start;
         }
         color:#926fb1;
     }
     &3{
         &-btn{
             background-color: #d64541;
+            color:white;
             border-top: 5px 5px;
             border-bottom: 5px 5px;
+            padding: 10px;
             border-style: none;
+            align-self: start;
         }
         color:#d64541;
     }
@@ -282,26 +311,68 @@ i{
     &-IT{
         color:#4387f6;
         margin-top: 10px;
+        &-img{
+            margin-top: 20px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #4387f6;
+        }
     }
     &-DM{
         color:#00b67b;
         margin-top: 10px;
+        &-img{
+            margin-top: 20px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #00b67b;
+        }
     }
     &-TS{
         color:#d64541;
         margin-top: 10px;
+        &-img{
+            margin-top: 20px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #d64541;
+        }
     }
     &-WD{
         color:#926fb1;
         margin-top: 10px;
+        &-img{
+            margin-top: 20px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #926fb1;
+        }
     }
     &-CS{
         color: #f62459;
         margin-top: 10px;
+        &-img{
+            margin-top: 20px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #f62459;
+        }
     }
     &-DC{
         color:#d64541;
         margin-top: 10px;
+        &-img{
+            margin-top: 20px;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: #d64541;
+        }
     }
 }  
 .ReadMore{
@@ -311,6 +382,9 @@ i{
 .btn{
     align-self: flex-start;
     width:100%;
+}
+.move-up{
+    @include move-up();
 }
 .BS {
     @include Move-up(white,#67809f);

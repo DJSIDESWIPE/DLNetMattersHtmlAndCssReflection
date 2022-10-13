@@ -164,6 +164,20 @@ main, footer, form {
   flex-grow: auto;
 }
 
+.row-3 {
+  column-count: 3;
+  width: 100%;
+  margin-left: 0;
+  flex: auto;
+}
+
+.row-4 {
+  flex: auto;
+  margin-left: 0;
+  column-count: 4;
+  width: 100%;
+}
+
 .col {
   display: flex;
   flex-direction: column;
@@ -202,6 +216,7 @@ button {
   border-radius: 5px 5px 5px 5px;
   padding: 5em white;
   text-align: center;
+  margin-left: 2em;
 }
 
 #h2-left {
@@ -241,8 +256,16 @@ button {
   border-top: solid 1px grey;
 }
 
+.gap {
+  gap: 20px 20px;
+}
+
 .latestnewsimage {
   width: 100%;
+}
+
+.news {
+  margin-left: 10px;
 }
 
 .news-item1 {
@@ -251,9 +274,12 @@ button {
 
 .news-item1-btn {
   background-color: #67809f;
+  color: white;
   border-top: 5px 5px;
   border-bottom: 5px 5px;
+  padding: 10px;
   border-style: none;
+  align-self: start;
 }
 
 .news-item2 {
@@ -262,9 +288,12 @@ button {
 
 .news-item2-btn {
   background-color: #926fb1;
+  color: white;
   border-top: 5px 5px;
   border-bottom: 5px 5px;
+  padding: 10px;
   border-style: none;
+  align-self: start;
 }
 
 .news-item3 {
@@ -273,9 +302,12 @@ button {
 
 .news-item3-btn {
   background-color: #d64541;
+  color: white;
   border-top: 5px 5px;
   border-bottom: 5px 5px;
+  padding: 10px;
   border-style: none;
+  align-self: start;
 }
 
 .reverse-color {
@@ -337,9 +369,25 @@ i {
   margin-top: 10px;
 }
 
+.icon-IT-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #4387f6;
+}
+
 .icon-DM {
   color: #00b67b;
   margin-top: 10px;
+}
+
+.icon-DM-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #00b67b;
 }
 
 .icon-TS {
@@ -347,9 +395,25 @@ i {
   margin-top: 10px;
 }
 
+.icon-TS-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #d64541;
+}
+
 .icon-WD {
   color: #926fb1;
   margin-top: 10px;
+}
+
+.icon-WD-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #926fb1;
 }
 
 .icon-CS {
@@ -357,9 +421,25 @@ i {
   margin-top: 10px;
 }
 
+.icon-CS-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #f62459;
+}
+
 .icon-DC {
   color: #d64541;
   margin-top: 10px;
+}
+
+.icon-DC-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #d64541;
 }
 
 .ReadMore {
@@ -370,6 +450,18 @@ i {
 .btn {
   align-self: flex-start;
   width: 100%;
+}
+
+.move-up {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.move-up:hover {
+  top: -10px;
+  text-decoration: none;
 }
 
 .BS {

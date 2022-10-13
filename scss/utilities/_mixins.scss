@@ -11,3 +11,13 @@
     }
     
 }
+@mixin move-up(){
+    position: relative;
+    transition: ease top 0.5s;
+    top:0;
+    border-radius: 8%;
+    &:hover{
+        top:-10px;
+        text-decoration: none;
+    }
+}
