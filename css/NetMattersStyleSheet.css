@@ -39,21 +39,6 @@ p, h2, h3 {
   background-color: #444;
 }
 
-.btn-telecoms {
-  color: #d64541;
-  border: #d64541;
-}
-
-.btn-web {
-  color: #926fb1;
-  border: #926fb1;
-}
-
-.btn-software {
-  color: #67809f;
-  border: #67809f;
-}
-
 .btn-google {
   background-color: #4387f6;
   color: white;
@@ -93,19 +78,29 @@ li {
 
 .glythicon-search::before {
   content: "\E003";
+  position: absolute;
 }
 
 .center {
-  margin: auto;
   margin-left: 10px;
   margin-right: 10px;
-  width: 95%;
+  width: 90%;
 }
 
 .copyright {
   padding-top: 5px;
   border-top: solid white 1px;
-  width: 95;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #333645;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 p {
@@ -116,8 +111,13 @@ h2 {
   font-size: 3em;
 }
 
+#sign-up {
+  margin-left: 0%;
+}
+
 h4 {
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 li > a {
@@ -149,30 +149,40 @@ main, footer, form {
 
 .container {
   display: flex;
-  margin: auto;
   justify-content: space-around;
   gap: 10px;
 }
 
 .row {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+.row > .btn {
+  width: 100%;
+  flex-grow: auto;
+}
+
 .col {
+  display: flex;
   flex-direction: column;
 }
 
 .col-3 {
   flex-direction: column;
   justify-content: space-around;
+  column-count: 3;
 }
 
 .col > button {
   margin-top: auto;
-  margin-bottom: 5px;
-  align-self: flex-end;
-  width: 100%;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.col > .btn-inverse {
+  align-self: flex-start;
 }
 
 #Subscribe {
@@ -184,12 +194,18 @@ button {
   cursor: pointer;
   border-radius: 8px;
   padding: 5px;
+  border: none;
 }
 
 .Our-Services {
   border: solid white 1px;
   border-radius: 5px 5px 5px 5px;
   padding: 5em white;
+  text-align: center;
+}
+
+#h2-left {
+  text-align: left;
 }
 
 .item {
@@ -205,19 +221,15 @@ button {
 }
 
 .item-button {
-  width: auto;
+  width: 100%;
   margin-top: auto;
-  align-self: flex-end;
   margin-bottom: 5px;
 }
 
 .item-services {
   box-shadow: 0 0 5px #bebebe;
   height: 300px;
-}
-
-.item-services:hover {
-  top: -5px;
+  border-radius: 8%;
 }
 
 .item-h2 {
@@ -307,8 +319,190 @@ i {
   align-self: center;
 }
 
+.icon-BS {
+  color: #67809f;
+  margin-top: 10px;
+}
+
+.icon-BS-img {
+  margin-top: 20px;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #67809f;
+}
+
+.icon-IT {
+  color: #4387f6;
+  margin-top: 10px;
+}
+
+.icon-DM {
+  color: #00b67b;
+  margin-top: 10px;
+}
+
 .icon-TS {
   color: #d64541;
+  margin-top: 10px;
+}
+
+.icon-WD {
+  color: #926fb1;
+  margin-top: 10px;
+}
+
+.icon-CS {
+  color: #f62459;
+  margin-top: 10px;
+}
+
+.icon-DC {
+  color: #d64541;
+  margin-top: 10px;
+}
+
+.ReadMore {
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.btn {
+  align-self: flex-start;
+  width: 100%;
+}
+
+.BS {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.BS:hover {
+  color: white;
+  background-color: #67809f;
+  top: -10px;
+  text-decoration: none;
+}
+
+.BS:hover i[class*="BS"], .BS button[class*="BS-button"] {
+  color: #67809f;
+  background-color: white;
+}
+
+.IT {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.IT:hover {
+  color: white;
+  background-color: #4387f6;
+  top: -10px;
+  text-decoration: none;
+}
+
+.IT:hover i[class*="IT"], .IT button[class*="IT-button"] {
+  color: #4387f6;
+  background-color: white;
+}
+
+.DM {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.DM:hover {
+  color: white;
+  background-color: #00b67b;
+  top: -10px;
+  text-decoration: none;
+}
+
+.DM:hover i[class*="DM"], .DM button[class*="DM-button"] {
+  color: #00b67b;
+  background-color: white;
+}
+
+.TS {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.TS:hover {
+  color: white;
+  background-color: #d64541;
+  top: -10px;
+  text-decoration: none;
+}
+
+.TS:hover i[class*="TS"], .TS button[class*="TS-button"] {
+  color: #d64541;
+  background-color: white;
+}
+
+.WD {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.WD:hover {
+  color: white;
+  background-color: #926fb1;
+  top: -10px;
+  text-decoration: none;
+}
+
+.WD:hover i[class*="WD"], .WD button[class*="WD-button"] {
+  color: #926fb1;
+  background-color: white;
+}
+
+.CS {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.CS:hover {
+  color: white;
+  background-color: #f62459;
+  top: -10px;
+  text-decoration: none;
+}
+
+.CS:hover i[class*="CS"], .CS button[class*="CS-button"] {
+  color: #f62459;
+  background-color: white;
+}
+
+.DC {
+  position: relative;
+  transition: ease top 0.5s;
+  top: 0;
+  border-radius: 8%;
+}
+
+.DC:hover {
+  color: white;
+  background-color: #d64541;
+  top: -10px;
+  text-decoration: none;
+}
+
+.DC:hover i[class*="DC"], .DC button[class*="DC-button"] {
+  color: #d64541;
+  background-color: white;
 }
 
 /*!
