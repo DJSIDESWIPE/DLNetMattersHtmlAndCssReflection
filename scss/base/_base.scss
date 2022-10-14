@@ -1,9 +1,30 @@
+@media (max-width:496){
+//footer
+}
+@media (min-width:616){
+//inverse section
+}
+@media (min-width:722){
+//footer
+}
+@media (min-width:767){
+//header, Our services, latest news
+}
+@media (min-width:922){
+//sign up,header,our services,inversed
+}
 footer{
     background-color:$primary-color;
     color: $secondary-color;
 }
 input{
     line-height: 2em;
+}
+#SearchBox{
+    margin-right: -5px;
+    font-size: 1.5em;
+    width:100%;
+
 }
 #cookies{
     position: fixed;
@@ -15,18 +36,9 @@ input{
     height:45vh;
     text-align: center;
     margin-left: 25%;
+    z-index: 4;
 }
-.cookie-btn{
-    margin-top: auto;
-    padding: 10px;
-    border:none;
-}
-.accept{
-    background-color: $wisteria;
-}
-.settings{
-    background-color: #bebebe;
-}
+
 .accept-h:hover #cookies{
     display: none;
 
@@ -43,40 +55,9 @@ p,h2,h3{
     background-color: #444;
 }
 
-.btn-google{
-    background-color:$dodger-blue;
-    color: $secondary-color;
-    padding: 20px;
-    margin-top: auto;
-}
-.btn-trustpilot{
-    background-color:$jade;
-    color: $secondary-color;
-    padding: 20px;
-    margin-top: auto;
-}
-.btn-inverse{
-    background-color:#272936;
-    color: $secondary-color;
-    padding: 20px;
-    align-self: flex-start;
-}
-.btn-subscribe{
-    background-color: $primary-color;
-    color:$secondary-color;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding:10px;
-    &:hover{
-        background-color: darken($primary-color,10%);
-    }
-}
-.btn-sidebar{
-    background-color: $primary-color;
-    border-radius: 4%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 15px;
+
+.heading{
+    margin-top: 10px;
 }
 .required{
     color:red;
@@ -149,19 +130,7 @@ li>a{
         color: $secondary-color;
     }
 }
-#ChatBox{
-    position: fixed;
-    bottom: 20px ;
-    right: 20px;
-    border-radius:50%;
-    height: 60px;
-    width: 60px;
-    color: $secondary-color;
-    background-color: $primary-color;
-    &:hover{
-        cursor: pointer;
-    }
-}
+
 main,footer,form{
     margin-bottom: 0px;
     margin-top: 0px;
@@ -220,25 +189,11 @@ main,footer,form{
     margin-left: 2em;
     margin-right: 2em;
 }
-button {
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 8px;
-    padding: 5px;
-    border: none;
-    color:$secondary-color;
-}
+
 .news {
     margin-bottom: 10px;
 }
-.Our-Services{
-    border: solid $secondary-color 1px ;
-    border-radius: 5px 5px 5px 5px;
-    padding:5em $secondary-color;
-    text-align: center;
-    margin-left: 2em;
-    margin-right: 2em;
-}
+
 #h2-left{
     text-align: left;
 }
@@ -326,6 +281,9 @@ button {
     &>div>p{
         font-size: 1.25em;
     }
+    &>div>.customerthoughts{
+        font-size: 1.5em;
+    }
 }
 .stars{
     align-items: flex-start;
@@ -364,7 +322,7 @@ button {
 }
 .pushbottom{
     margin-top: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .pushtop{
     margin-top: 0;
@@ -452,107 +410,7 @@ i{
         }
     }
 }  
-.ReadMore{
-    justify-content: center;
-    align-self: flex-start;
-}
-.btn{
-    align-self: flex-start;
-    width:100%;
-}
-.move-up{
-    @include move-up();
-}
-.BS {
-    button[class*="BS-button"]{
-        //first color is set to color, 2nd is background-color
-        @include setcolors($secondary-color,$hoki);
-        padding: 10px;
-    }
-    @include Move-up($secondary-color,$hoki);
-    &:hover i[class*="BS"] {
-        @include setcolors($hoki,$secondary-color);
-    }
-    &:hover button[class*="BS-button"]{
-        @include setcolors($hoki,$secondary-color);
-    }
-}
-.IT{
-    button[class*="IT-button"]{
-        padding: 10px;
-        @include setcolors($secondary-color,$dodger-blue);
-    }
-    @include Move-up($secondary-color,$dodger-blue);
-    &:hover i[class*="IT"]{
-        @include setcolors($dodger-blue,$secondary-color);
-    }
-    &:hover button[class*="IT-button"]{
-        @include setcolors($dodger-blue,$secondary-color);
-    }
-}
-.DM{
-    button[class*="DM-button"]{
-        @include setcolors($secondary-color,$jade);
-        padding: 10px;
-    }
-    @include Move-up($secondary-color,$jade);
-    &:hover i[class*="DM"] {
-        @include setcolors($jade,$secondary-color);
-    }
-    &:hover button[class*="DM-button"]{
-        @include setcolors($jade,$secondary-color);
-    }
-}
-.TS{
-    button[class*="TS-button"]{
-        @include setcolors($secondary-color,$valencia);
-        padding: 10px;
-    }
-    @include Move-up($secondary-color,$valencia);
-    &:hover i[class*="TS"]{
-        @include setcolors($valencia,$secondary-color);
-    }
-    &:hover button[class*="TS-button"]{
-        @include setcolors($valencia,$secondary-color);
-    }
-}
-.WD{
-    button[class*="WD-button"]{
-        @include setcolors($secondary-color,$wisteria);
-        padding: 10px;
-    }
-    @include Move-up($secondary-color,$wisteria);
-    &:hover i[class*="WD"]{
-        @include setcolors($wisteria,$secondary-color);
-    } 
-    &:hover button[class*="WD-button"]{
-        @include setcolors($wisteria,$secondary-color);
-    }
-}
-.CS{
-    button[class*="CS-button"]{
-        @include setcolors($secondary-color,$radical-red);
-        padding: 10px;
-    }
-    @include Move-up($secondary-color,$radical-red);
-    &:hover i[class*="CS"]{
-        @include setcolors($radical-red,$secondary-color);
-    }
-    &:hover button[class*="CS-button"]{
-        @include setcolors($radical-red,$secondary-color);
-    }
-}
-.DC{
-    button[class*="DC-button"]{
-        @include setcolors($secondary-color,$valencia);
-        padding: 10px;
-    }
-    @include Move-up($secondary-color,$valencia);
-    &:hover i[class*="DC"]{
-        @include setcolors($valencia,$secondary-color);
-    }
-    &:hover button[class*="DC-button"]{
-        @include setcolors($valencia,$secondary-color);
-    }
-}
+
+
+
 

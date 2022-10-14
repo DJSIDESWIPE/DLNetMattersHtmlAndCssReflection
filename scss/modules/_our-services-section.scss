@@ -1,0 +1,103 @@
+.Our-Services{
+    border: solid $secondary-color 1px ;
+    border-radius: 5px 5px 5px 5px;
+    padding:5em $secondary-color;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.move-up{
+    @include move-up();
+}
+.BS {
+    button[class*="BS-button"]{
+        //first color is set to color, 2nd is background-color
+        @include setcolors($secondary-color,$hoki);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$hoki);
+    &:hover i[class*="BS"] {
+        @include setcolors($hoki,$secondary-color);
+    }
+    &:hover button[class*="BS-button"]{
+        @include setcolors($hoki,$secondary-color);
+    }
+}
+.IT{
+    button[class*="IT-button"]{
+        padding: 10px;
+        @include setcolors($secondary-color,$dodger-blue);
+    }
+    @include Move-up($secondary-color,$dodger-blue);
+    &:hover i[class*="IT"]{
+        @include setcolors($dodger-blue,$secondary-color);
+    }
+    &:hover button[class*="IT-button"]{
+        @include setcolors($dodger-blue,$secondary-color);
+    }
+}
+.DM{
+    button[class*="DM-button"]{
+        @include setcolors($secondary-color,$jade);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$jade);
+    &:hover i[class*="DM"] {
+        @include setcolors($jade,$secondary-color);
+    }
+    &:hover button[class*="DM-button"]{
+        @include setcolors($jade,$secondary-color);
+    }
+}
+.TS{
+    button[class*="TS-button"]{
+        @include setcolors($secondary-color,$valencia);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$valencia);
+    &:hover i[class*="TS"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+    &:hover button[class*="TS-button"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+}
+.WD{
+    button[class*="WD-button"]{
+        @include setcolors($secondary-color,$wisteria);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$wisteria);
+    &:hover i[class*="WD"]{
+        @include setcolors($wisteria,$secondary-color);
+    } 
+    &:hover button[class*="WD-button"]{
+        @include setcolors($wisteria,$secondary-color);
+    }
+}
+.CS{
+    button[class*="CS-button"]{
+        @include setcolors($secondary-color,$radical-red);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$radical-red);
+    &:hover i[class*="CS"]{
+        @include setcolors($radical-red,$secondary-color);
+    }
+    &:hover button[class*="CS-button"]{
+        @include setcolors($radical-red,$secondary-color);
+    }
+}
+.DC{
+    button[class*="DC-button"]{
+        @include setcolors($secondary-color,$valencia);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$valencia);
+    &:hover i[class*="DC"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+    &:hover button[class*="DC-button"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+}

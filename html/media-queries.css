@@ -1,0 +1,43 @@
+/*
+footer switches to 2 column
+@media (min-width:496){
+
+}
+switches to 2 top then 3 bottom columns
+@media (min-width:722){
+
+}
+
+sign-up switches to side by side fields
+@media (min-width: 922px){
+
+}
+latest news switches to display 2
+@media (min-width: 767px){
+
+}
+inversed section switches from side by side buttons to on top
+@media (min-width: 616px){
+
+}
+inversed section switches to 2 columns
+@media (min-width: 992px){
+
+}
+our services switches from bottom 4 being in 2 columns and top 3 being in 1 column
+@media (min-width: 767px){
+
+}
+our services switches to 3 top being in row and bottom 4 being in 2 columns
+@media (min-width: 992px){
+
+}
+header removes phone symbol
+@media (min-width: 767px){
+
+}
+header adds support and contact buttons
+@media (min-width: 992px){
+
+}
+*/

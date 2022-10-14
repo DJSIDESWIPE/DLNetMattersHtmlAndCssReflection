@@ -7,6 +7,12 @@ input {
   line-height: 2em;
 }
 
+#SearchBox {
+  margin-right: -5px;
+  font-size: 1.5em;
+  width: 100%;
+}
+
 #cookies {
   position: fixed;
   border-radius: 6px;
@@ -17,20 +23,7 @@ input {
   height: 45vh;
   text-align: center;
   margin-left: 25%;
-}
-
-.cookie-btn {
-  margin-top: auto;
-  padding: 10px;
-  border: none;
-}
-
-.accept {
-  background-color: #926fb1;
-}
-
-.settings {
-  background-color: #bebebe;
+  z-index: 4;
 }
 
 .accept-h:hover #cookies {
@@ -51,45 +44,8 @@ p, h2, h3 {
   background-color: #444;
 }
 
-.btn-google {
-  background-color: #4387f6;
-  color: white;
-  padding: 20px;
-  margin-top: auto;
-}
-
-.btn-trustpilot {
-  background-color: #00b67b;
-  color: white;
-  padding: 20px;
-  margin-top: auto;
-}
-
-.btn-inverse {
-  background-color: #272936;
-  color: white;
-  padding: 20px;
-  align-self: flex-start;
-}
-
-.btn-subscribe {
-  background-color: #333645;
-  color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.btn-subscribe:hover {
-  background-color: #1d1f28;
-}
-
-.btn-sidebar {
-  background-color: #333645;
-  border-radius: 4%;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 15px;
+.heading {
+  margin-top: 10px;
 }
 
 .required {
@@ -177,21 +133,6 @@ li > a:hover {
   color: white;
 }
 
-#ChatBox {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  color: white;
-  background-color: #333645;
-}
-
-#ChatBox:hover {
-  cursor: pointer;
-}
-
 main, footer, form {
   margin-bottom: 0px;
   margin-top: 0px;
@@ -260,26 +201,8 @@ main, footer, form {
   margin-right: 2em;
 }
 
-button {
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 8px;
-  padding: 5px;
-  border: none;
-  color: white;
-}
-
 .news {
   margin-bottom: 10px;
-}
-
-.Our-Services {
-  border: solid white 1px;
-  border-radius: 5px 5px 5px 5px;
-  padding: 5em white;
-  text-align: center;
-  margin-left: 2em;
-  margin-right: 2em;
 }
 
 #h2-left {
@@ -384,6 +307,10 @@ button {
   font-size: 1.25em;
 }
 
+.reverse-color > div > .customerthoughts {
+  font-size: 1.5em;
+}
+
 .stars {
   align-items: flex-start;
   justify-items: start;
@@ -428,7 +355,7 @@ button {
 
 .pushbottom {
   margin-top: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .pushtop {
@@ -531,14 +458,124 @@ i {
   background-color: #d64541;
 }
 
-.ReadMore {
-  justify-content: center;
-  align-self: flex-start;
+button {
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 5px;
+  border: none;
+  color: white;
+}
+
+#ChatBox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: #333645;
+  z-index: 3;
+}
+
+#ChatBox:hover {
+  cursor: pointer;
+}
+
+.cookie-btn {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+}
+
+.accept {
+  background-color: #926fb1;
+}
+
+.settings {
+  background-color: #bebebe;
 }
 
 .btn {
   align-self: flex-start;
   width: 100%;
+}
+
+.btn-support {
+  background-color: #4387f6;
+  padding: 1em;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.btn-contact {
+  background-color: #939393;
+  padding: 1em;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.btn-search {
+  background-color: #939393;
+  padding: 1em;
+  border-radius: 0 4% 4% 0;
+  margin-left: -5px;
+}
+
+.btn-sidebar {
+  background-color: #333645;
+  border-radius: 4%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+.btn-inverse {
+  background-color: #272936;
+  color: white;
+  padding: 20px;
+  align-self: flex-start;
+}
+
+.btn-google {
+  background-color: #4387f6;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.btn-trustpilot {
+  background-color: #00b67b;
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.btn-subscribe {
+  background-color: #333645;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.btn-subscribe:hover {
+  background-color: #1d1f28;
+}
+
+.ReadMore {
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.Our-Services {
+  border: solid white 1px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 5em white;
+  text-align: center;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .move-up {
