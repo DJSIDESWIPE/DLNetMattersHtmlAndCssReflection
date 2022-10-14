@@ -1,11 +1,14 @@
 footer{
-    background-color:#333645;
-    color: white;
+    background-color:$primary-color;
+    color: $secondary-color;
+}
+input{
+    line-height: 2em;
 }
 #cookies{
     position: fixed;
     border-radius: 6px;
-    background-color: white;
+    background-color: $secondary-color;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     border:none;
     width:40vw;
@@ -18,6 +21,12 @@ footer{
     padding: 10px;
     border:none;
 }
+.accept{
+    background-color: $wisteria;
+}
+.settings{
+    background-color: #bebebe;
+}
 .accept-h:hover #cookies{
     display: none;
 
@@ -25,7 +34,7 @@ footer{
 body {
     margin-left: 0px;
     margin-right: 0px;
-    color:#333645;
+    color:$primary-color;
 }
 p,h2,h3{
     margin-left: 15px;
@@ -35,28 +44,58 @@ p,h2,h3{
 }
 
 .btn-google{
-    background-color:#4387f6;
-    color: white;
+    background-color:$dodger-blue;
+    color: $secondary-color;
     padding: 20px;
     margin-top: auto;
 }
 .btn-trustpilot{
-    background-color:#00b67b;
-    color: white;
+    background-color:$jade;
+    color: $secondary-color;
     padding: 20px;
     margin-top: auto;
 }
 .btn-inverse{
     background-color:#272936;
-    color: white;
+    color: $secondary-color;
     padding: 20px;
     align-self: flex-start;
 }
-.brand-background{
-    background-color:#333645;
+.btn-subscribe{
+    background-color: $primary-color;
+    color:$secondary-color;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+    &:hover{
+        background-color: darken($primary-color,10%);
+    }
+}
+.btn-sidebar{
+    background-color: $primary-color;
+    border-radius: 4%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
 }
 .required{
     color:red;
+}
+input[type="checkbox"]{
+    display:none;
+    &:checked + .label::before{
+        font-family: "Font Awesome 6 Free";
+        content: "\f14a";
+    }
+}
+.label{
+    &::before{
+        font-family: "Font Awesome 6 Free";
+        font-style: regular;
+        font-size: 2em;
+        content: "\f0c8";
+        display: inline-block;
+    }
 }
 li{
     list-style:none;
@@ -69,19 +108,19 @@ li{
     position: absolute;
 }
 .center {
-    margin-left: 10px;
-    margin-right: 10px;
-    width:90%;
+    margin-left: 2em;
+    margin-right: 2em;
+    
 }
 .copyright{
     padding-top: 5px;
-    border-top: solid white 1px;
+    border-top: solid $secondary-color 1px;
     margin-left: 10px;
     margin-right: 10px;
 }
 a, a:visited{
     text-decoration: none;
-    color: #333645;
+    color: $primary-color;
 
 }
 a:hover{
@@ -93,24 +132,21 @@ p{
 h2{
     font-size: 3em;
 }
-#sign-up{
-    margin-left: 0%;
-}
 h4 {
     text-transform: uppercase;
     margin-left: 20px;
 }
 li>a{
-    color:white;
+    color: $secondary-color;
     text-decoration: none;
     &:hover{
         text-decoration: underline;
     }
 }
 .footer-links{
-    color:white;
+    color:$secondary-color;
     &:visited{
-        color: white;
+        color: $secondary-color;
     }
 }
 #ChatBox{
@@ -120,8 +156,8 @@ li>a{
     border-radius:50%;
     height: 60px;
     width: 60px;
-    color: white;
-    background-color: #333645;
+    color: $secondary-color;
+    background-color: $primary-color;
     &:hover{
         cursor: pointer;
     }
@@ -130,30 +166,32 @@ main,footer,form{
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-}
+
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    gap: 10px;
     &>.btn{
         width:100%;
         flex-grow: auto;
+        gap:5px;
     }
     &-3{
         column-count: 3;
         width:100%;
         margin-left: 0;
-        flex:auto;
+        &>a{
+            width:30%;
+        }
     }
     &-4{
-        flex:auto;
         margin-left: 0;
         column-count: 4;
-        width:100%
+        width:100%;
+        &>a{
+            width: 22.5%;
+        }
     }
     
 }
@@ -178,26 +216,34 @@ main,footer,form{
 #Subscribe{
     background-color: lightgray;
 }
+.margin{
+    margin-left: 2em;
+    margin-right: 2em;
+}
 button {
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 8px;
     padding: 5px;
     border: none;
+    color:$secondary-color;
+}
+.news {
+    margin-bottom: 10px;
 }
 .Our-Services{
-    border: solid white 1px ;
+    border: solid $secondary-color 1px ;
     border-radius: 5px 5px 5px 5px;
-    padding:5em white;
+    padding:5em $secondary-color;
     text-align: center;
     margin-left: 2em;
+    margin-right: 2em;
 }
 #h2-left{
     text-align: left;
 }
 .item {
     flex: 50%;
-    margin: 5px;
     &-viewall{
         margin-left: auto;
         align-self: center;
@@ -209,7 +255,14 @@ button {
         margin-top: auto;
         margin-bottom: 5px;
     }
-    &-services{
+    &-news{
+        box-shadow: 0 0 5px #bebebe;
+        height:90vh;
+        border-color: red;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+    }
+    &-services {
         box-shadow: 0 0 5px #bebebe;
         height:300px;
         border-radius: 8%;
@@ -221,59 +274,66 @@ button {
 .posted{
     padding-top: 20px;
     border-top: solid 1px grey;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .gap {
     gap: 20px 20px;
 }
-.latestnewsimage{
-    width:100%;
-}
-.news{
-    margin-left: 10px;
-}
+
+
 .news-item{
     &1{
         &-btn{
-            background-color: #67809f;
-            color:white;
-            border-top: 5px 5px;
+            background-color: $first-news;
+            color:$secondary-color;
             border-bottom: 5px 5px;
             padding: 10px;
             border-style: none;
             align-self: start;
         }
-        color:#67809f;
+        color:$first-news;
     }
     &2{
         &-btn{
-            background-color: #926fb1;
-            color:white;
-            border-top: 5px 5px;
+            background-color: $second-news;
+            color:$secondary-color;
             border-bottom: 5px 5px;
             padding: 10px;
             border-style: none;
             align-self: start;
         }
-        color:#926fb1;
+        color:$second-news;
     }
     &3{
         &-btn{
-            background-color: #d64541;
-            color:white;
-            border-top: 5px 5px;
+            background-color: $third-news;
+            color:$secondary-color;
             border-bottom: 5px 5px;
             padding: 10px;
             border-style: none;
             align-self: start;
         }
-        color:#d64541;
+        color: $third-news
     }
 }
 .reverse-color{
-    background-color: #333645;
-    color:white;
+    background-color: $primary-color;
+    color: $secondary-color;
+    &>div>h2{
+        font-size: 2.5em;
+    }
+    &>div>p{
+        font-size: 1.25em;
+    }
 }
-
+.stars{
+    align-items: flex-start;
+    justify-items: start;
+}
+.fa-star{
+    color:#FFB247;
+}
 .images{
     width: 100%;
 }
@@ -282,7 +342,7 @@ button {
     background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url("../img/home-oaVs.png");
     height:75vh;
     width: 100%;
-    color: white;
+    color: $secondary-color;
     &-h2{
         margin-top: 5%;
         font-size: 4em;
@@ -300,86 +360,95 @@ button {
 .end{
     margin-left: auto;
     align-items: flex-end;
+    margin-right: 20px;
+}
+.pushbottom{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+.pushtop{
+    margin-top: 0;
+    margin-bottom: auto;
 }
 i{
     align-self: center;
 }
 .icon{
     &-BS{
-        color:#67809f;
+        color:$hoki;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #67809f;
+            padding: 20px;
+            background-color: $hoki;
         }
     }
     &-IT{
-        color:#4387f6;
+        color:$dodger-blue;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #4387f6;
+            padding: 20px;
+            background-color: $dodger-blue;
         }
     }
     &-DM{
-        color:#00b67b;
+        color:$jade;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #00b67b;
+            padding: 20px;
+            background-color: $jade;
         }
     }
     &-TS{
-        color:#d64541;
+        color:$valencia;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #d64541;
+            padding: 20px;
+            background-color: $valencia;
         }
     }
     &-WD{
-        color:#926fb1;
+        color:$wisteria;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #926fb1;
+            padding: 20px;
+            background-color: $wisteria;
         }
     }
     &-CS{
-        color: #f62459;
+        color: $radical-red;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #f62459;
+            padding: 20px;
+            background-color: $radical-red;
         }
     }
     &-DC{
-        color:#d64541;
+        color: $valencia;
         margin-top: 10px;
         &-img{
-            margin-top: 20px;
-            color: white;
+            margin: 20px;
+            color: $secondary-color;
             border-radius: 50%;
-            padding: 10px;
-            background-color: #d64541;
+            padding: 20px;
+            background-color: $valencia;
         }
     }
 }  
@@ -395,52 +464,95 @@ i{
     @include move-up();
 }
 .BS {
-    @include Move-up(white,#67809f);
-    &:hover i[class*="BS"], button[class*="BS-button"]{
-        color: #67809f;
-        background-color: white;
+    button[class*="BS-button"]{
+        //first color is set to color, 2nd is background-color
+        @include setcolors($secondary-color,$hoki);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$hoki);
+    &:hover i[class*="BS"] {
+        @include setcolors($hoki,$secondary-color);
+    }
+    &:hover button[class*="BS-button"]{
+        @include setcolors($hoki,$secondary-color);
     }
 }
 .IT{
-    @include Move-up(white,#4387f6);
-    &:hover i[class*="IT"], button[class*="IT-button"]{
-        color: #4387f6;
-        background-color: white;
+    button[class*="IT-button"]{
+        padding: 10px;
+        @include setcolors($secondary-color,$dodger-blue);
+    }
+    @include Move-up($secondary-color,$dodger-blue);
+    &:hover i[class*="IT"]{
+        @include setcolors($dodger-blue,$secondary-color);
+    }
+    &:hover button[class*="IT-button"]{
+        @include setcolors($dodger-blue,$secondary-color);
     }
 }
 .DM{
-    @include Move-up(white,#00b67b);
-    &:hover i[class*="DM"], button[class*="DM-button"]{
-        color: #00b67b;
-        background-color: white;
+    button[class*="DM-button"]{
+        @include setcolors($secondary-color,$jade);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$jade);
+    &:hover i[class*="DM"] {
+        @include setcolors($jade,$secondary-color);
+    }
+    &:hover button[class*="DM-button"]{
+        @include setcolors($jade,$secondary-color);
     }
 }
 .TS{
-    @include Move-up(white,#d64541);
-    &:hover i[class*="TS"], button[class*="TS-button"]{
-        color: #d64541;
-        background-color: white;
+    button[class*="TS-button"]{
+        @include setcolors($secondary-color,$valencia);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$valencia);
+    &:hover i[class*="TS"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+    &:hover button[class*="TS-button"]{
+        @include setcolors($valencia,$secondary-color);
     }
 }
 .WD{
-    @include Move-up(white,#926fb1);
-    &:hover i[class*="WD"], button[class*="WD-button"]{
-        color: #926fb1;
-        background-color: white;
+    button[class*="WD-button"]{
+        @include setcolors($secondary-color,$wisteria);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$wisteria);
+    &:hover i[class*="WD"]{
+        @include setcolors($wisteria,$secondary-color);
+    } 
+    &:hover button[class*="WD-button"]{
+        @include setcolors($wisteria,$secondary-color);
     }
 }
 .CS{
-    @include Move-up(white,#f62459);
-    &:hover i[class*="CS"], button[class*="CS-button"]{
-        color: #f62459;
-        background-color: white;
+    button[class*="CS-button"]{
+        @include setcolors($secondary-color,$radical-red);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$radical-red);
+    &:hover i[class*="CS"]{
+        @include setcolors($radical-red,$secondary-color);
+    }
+    &:hover button[class*="CS-button"]{
+        @include setcolors($radical-red,$secondary-color);
     }
 }
 .DC{
-    @include Move-up(white,#d64541);
-    &:hover i[class*="DC"], button[class*="DC-button"]{
-        color: #d64541;
-        background-color: white;
+    button[class*="DC-button"]{
+        @include setcolors($secondary-color,$valencia);
+        padding: 10px;
+    }
+    @include Move-up($secondary-color,$valencia);
+    &:hover i[class*="DC"]{
+        @include setcolors($valencia,$secondary-color);
+    }
+    &:hover button[class*="DC-button"]{
+        @include setcolors($valencia,$secondary-color);
     }
 }
 
