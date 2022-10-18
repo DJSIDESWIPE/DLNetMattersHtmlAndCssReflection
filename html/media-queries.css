@@ -40,4 +40,17 @@ header adds support and contact buttons
 @media (min-width: 992px){
 
 }
+our services switches to 3 top and 4 on 2 columns
+@media (min-width: 1260px){
+
+}
+
+latest news displays 3 columns
+@media (min-width: 1260px){
+
+}
+footer displays all 5 inline
+@media (min-width: 1260px){
+
+}
 */

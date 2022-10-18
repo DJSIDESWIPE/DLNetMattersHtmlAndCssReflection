@@ -1,24 +1,210 @@
-@media (max-width:496){
-//footer
+@media screen and (max-width:496px){
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
-@media (min-width:616){
+@media screen and (min-width:497px) and (max-width:721px) {
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        &>.footer-link-section{
+            flex: 0 0 50%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+        &>.offices{
+            flex: 0 0 50%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+        }
+        
+    }
+}
+
+@media screen and (min-width:617px) and (max-width:921px){
 //inverse section
+.inverse-row{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 100%;
+    &>*{
+        flex: 0 0 45%;
+    }
 }
-@media (min-width:722){
+}
+@media screen and (min-width:722px) and (max-width:1259px){
 //footer
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    &>.footer-link-section{
+        flex: 0 0 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    &>.offices{
+        flex: 0 0 33%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+    
 }
-@media (min-width:767){
+}
+@media screen and (max-width:766px){
+    .container-news{
+        display: flex;
+        flex-direction: column;
+        &>.news-footer{
+            justify-content: center;
+            text-align: center;
+        }
+        &>.news-header>a{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width:767px) and (max-width:1259px){
 //header, Our services, latest news
+    .container-news{
+        display: flex;
+        flex-direction: column;
+        &>.news-header{
+            display: flex;
+            align-items: center;
+            &>h2{
+                text-align: left;
+                margin-right: auto;
+            }
+            &>a{
+                text-align: right;
+                margin-left: auto;
+            }
+        }
+        &>.container-news-stories{
+            display: flex;
+            flex-direction: row;
+            column-count: 2;
+            
+            &>*>.container-news-3{
+                display: none;
+            }
+            &>*>.container-news-2{
+                display: flex;
+                    flex-direction: column;
+                    flex:0 0 50%;
+            }
+            &>*>.container-news-1{
+                display: flex;
+                    flex-direction: column;
+                    flex:0 0 50%;
+            }
+        }
+        &>.news-footer{
+            display: none;
+        }
+    }
+    
+    
 }
-@media (min-width:922){
-//sign up,header,our services,inversed
+
+@media screen and (min-width:1260px){
+//footer, Our services, latest news
+    .container-footer{
+        column-count: 5;
+        flex-direction: row;
+        display: inline-flex;
+        flex: 1 0 20%;
+    }
+
+    .container-news{
+        &>.news-header{
+            display: flex;
+            align-items: center;
+            &>h2{
+                text-align: left;
+                margin-right: auto;
+            }
+            &>a{
+                text-align: right;
+                margin-left: auto;
+            }
+        }
+        &>.container-news-stories{
+            
+            display: flex;
+            flex-direction: row;
+            column-count: 3;
+            
+            &>*{
+                display: flex;
+                    flex-direction: column;
+                    flex:0 0 32%;
+            }
+        }
+        &>.news-footer{
+            display: none;
+        }
+    }
+    .inverse-row{
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 100%;
+        &>*{
+            flex: 0 0 45%;
+        }
+    }
 }
+@media screen and (min-width:922px){
+    .container-sign-up{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        &>.container-sign-up-field{
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 50%;
+        }
+
+    }
+
+    .container-inverse{
+        display: flex;
+        flex-direction: row;
+        &>.container-inverse-welcome{
+            display: flex;
+            flex-direction: column;
+        }
+        &>.container-inverse-reviews{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+.logos-row{
+    display: flex;
+    flex-direction: row;
+    flex:1 1 100%;
+    
+}
+
 footer{
     background-color:$primary-color;
     color: $secondary-color;
 }
 input{
     line-height: 2em;
+    width:100%;
 }
 #SearchBox{
     margin-right: -5px;
@@ -37,6 +223,52 @@ input{
     text-align: center;
     margin-left: 25%;
     z-index: 4;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    &>.btn{
+        width:100%;
+        flex-grow: auto;
+        gap:5px;
+    }
+    &-3{
+        column-count: 3;
+        width:100%;
+        margin-left: 0;
+        &>a{
+            width:30%;
+        }
+    }
+    &-4{
+        margin-left: 0;
+        column-count: 4;
+        width:100%;
+        &>a{
+            width: 22.5%;
+        }
+    }
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    &-3{
+        flex-direction: column;
+        justify-content: space-around;
+        column-count: 1;
+    }
+    &>button{
+        margin-top:auto;
+        margin-bottom: 20px;
+        align-self:center;
+    }
+    &>.btn-inverse{
+        align-self: flex-start;
+    }
 }
 
 .accept-h:hover #cookies{
@@ -93,6 +325,16 @@ li{
     margin-right: 2em;
     
 }
+.view-all{
+    text-decoration: none;
+    font-size: 2em;
+    &:visited{
+    text-decoration: none; 
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
 .copyright{
     padding-top: 5px;
     border-top: solid $secondary-color 1px;
@@ -136,51 +378,7 @@ main,footer,form{
     margin-top: 0px;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 10px;
-    &>.btn{
-        width:100%;
-        flex-grow: auto;
-        gap:5px;
-    }
-    &-3{
-        column-count: 3;
-        width:100%;
-        margin-left: 0;
-        &>a{
-            width:30%;
-        }
-    }
-    &-4{
-        margin-left: 0;
-        column-count: 4;
-        width:100%;
-        &>a{
-            width: 22.5%;
-        }
-    }
-    
-}
-.col{
-    display: flex;
-    flex-direction: column;
-    &-3{
-        flex-direction: column;
-        justify-content: space-around;
-        column-count: 3;
-    }
-    &>button{
-        margin-top:auto;
-        margin-bottom: 20px;
-        align-self:center;
-    }
-    &>.btn-inverse{
-        align-self: flex-start;
-    }
-}
+
 
 #Subscribe{
     background-color: lightgray;
@@ -196,6 +394,29 @@ main,footer,form{
 
 #h2-left{
     text-align: left;
+}
+.container-news{
+    &-1{
+        box-shadow: 0 0 5px #bebebe;
+        max-height:110vh;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+        flex:1 1 100%;
+    }
+    &-2{
+        box-shadow: 0 0 5px #bebebe;
+        max-height:110vh;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+        flex:1 1 100%;
+    }
+    &-3{
+        box-shadow: 0 0 5px #bebebe;
+        max-height:110vh;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+        flex:1 1 100%;
+    }
 }
 .item {
     flex: 50%;
@@ -213,7 +434,6 @@ main,footer,form{
     &-news{
         box-shadow: 0 0 5px #bebebe;
         height:90vh;
-        border-color: red;
         border-radius: 0 0 2% 2%;
         text-align: left;
     }
@@ -226,19 +446,21 @@ main,footer,form{
         margin-right: auto;
     }
 }
+
+.gap {
+    gap: 20px 20px;
+}
+
 .posted{
     padding-top: 20px;
     border-top: solid 1px grey;
     margin-bottom: 20px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
-.gap {
-    gap: 20px 20px;
-}
-
-
 .news-item{
-    &1{
+    &-1{
         &-btn{
             background-color: $first-news;
             color:$secondary-color;
@@ -249,7 +471,7 @@ main,footer,form{
         }
         color:$first-news;
     }
-    &2{
+    &-2{
         &-btn{
             background-color: $second-news;
             color:$secondary-color;
@@ -260,7 +482,7 @@ main,footer,form{
         }
         color:$second-news;
     }
-    &3{
+    &-3{
         &-btn{
             background-color: $third-news;
             color:$secondary-color;
