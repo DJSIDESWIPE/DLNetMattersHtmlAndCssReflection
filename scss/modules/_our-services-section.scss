@@ -1,13 +1,40 @@
-.Our-Services{
-    border: solid $secondary-color 1px ;
-    border-radius: 5px 5px 5px 5px;
-    padding:5em $secondary-color;
-    text-align: center;
-    margin-left: 2em;
-    margin-right: 2em;
+.our-services-header{
+    display: flex;
+    align-items: center;
+    &>h2{
+        text-align: left;
+        flex: 0 0 45%;
+    }
+    &>a{
+        text-align: right;
+        flex: 0 0 46%;
+        
+    }
 }
-.move-up{
-    @include move-up();
+.our-services-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.our-services-bottom{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+.item-services {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px #bebebe;
+    height:300px;
+    border-radius: 8%;
+    text-align: center;
+    &>button{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .BS {
     button[class*="BS-button"]{

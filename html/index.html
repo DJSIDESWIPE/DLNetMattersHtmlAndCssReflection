@@ -10,19 +10,22 @@
 		</script>
 	</head>
 	<body>
-		<header class="row gap">
-			<img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters logo">
-			<div class="row gap heading">
+		<header class="container-header gap">
+			<img class="heading-img" src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters logo">
+			<div class="gap heading-support">
 				<Button class="btn-support start"><i class="fa-solid fa-computer-mouse"></i> Support</Button>
 				<button class="btn-contact start"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Contact</button>
 			</div>
-			<div class="row heading">
-				<input class="start" type="text" id="SearchBox" placeholder="Search...">
+			<i class="fa fa-phone fa-2x"></i>
+			<div class="heading-search">
+				<input class="start search-box" type="text" id="SearchBox" placeholder="Search...">
 				<button class="start btn-search"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
 			</div>
 			<button class="btn-sidebar"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
 		</header>
+
 		<button id="ChatBox"><i class="fa fa-message fa-2x" aria-hidden="true"></i> </button>
+
 		<div id="cookies" class="center">
 			<h2>Cookie Policy</h2>
 			<p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "Privacy Policy" otherwise click "Accept Cookies" to enter.</p>
@@ -31,56 +34,58 @@
 				<button class="cookie-btn accept" onclick="hide()"> Accept Cookies</button>
 			</div>
 		</div>
+		
 		<main>
-			<div class="reverse-color navbar">
-				<div class="row center">
-					<div class="col">
+			<div class="reverse-color container-navbar">
+				<div class="navbar center">
+					<div class="navbar-content">
 						<i class="fa fa-grip icon-BS" aria-hidden="true"></i>
 						<p><small>bespoke</small><br>Software</p>
 					</div>
-					<div class="col">
+					<div class="navbar-content">
 						<i class="fa fa-television icon-IT" aria-hidden="true"></i>
 						<p><small>IT</small><br>Support</p>
 					</div>
-					<div class="col">
+					<div class="navbar-content">
 						<i class="fa fa-signal icon-DM"></i>
 						<p><small>Digital</small><br>Marketing</p>
 					</div>
-					<div class="col">
+					<div class="navbar-content">
 						<i class="fa fa-phone icon-TS" aria-hidden="true"></i>
 						<p><small>Telecoms</small><br>Services</p>
 					</div>
-					<div class="col">
+					<div class="navbar-content">
 						<i class="fa fa-code icon-WD" aria-hidden="true"></i>
 						<p><small>Web</small><br>Design</p>
 					</div>
-					<div class="col">
+					<div class="navbar-content">
 						<i class="fa fa-shield-alt icon-CS"></i>
 						<p><small>Cyber</small><br>Security</p>
 					</div>
-					<div class="col">
+					<div class="navbar-content">
 						<i class="fa fa-graduation-cap icon-DC" aria-hidden="true"></i>
 						<p><small>Developer</small><br>Course</p>
 					</div>
 				</div>
 			</div>
 			<section class="banner">
-				<div class="col center banner-div">
+				<div class="center banner-div">
 					<h2 class="banner-h2">The East Of England's Leading <br> Technology Company</h2>
 					<p class="banner-p">Performance-driven digital and technology services
 						<br>with complete transparency.</p>
 				</div>
 			</section>
 			
-			<div class="Our-Services col" >
-				<div class="row center">
+			
+			<div class="container-our-services" >
+				<div class="our-services-header center">
 					<h2 id="h2-left" class="item">Our Services</h2>
-					<a href="#" class="item-viewall">View All <i class="fa fa-arrow-right"></i></a>
+					<a href="#" class="view-all">View All <i class="fa fa-arrow-right"></i></a>
 				</div>
-				<div class="col center gap">
-					<div class="row row-3" >
+				<div class="our-services-content center">
+					<div class="our-services-top gap" >
 						<a href="" class="BS">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-grip icon-BS icon-BS-img" aria-hidden="true"></i>
 								<h3>Bespoke software</h3>
 								<p>Bespoke software solutions for all your business needs including integrations.</p>
@@ -88,7 +93,7 @@
 							</div>
 						</a>
 						<a href ="" class="IT">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-television icon-IT icon-IT-img" aria-hidden="true"></i>
 								<h3>IT Support</h3>
 								<p>Fully managed IT support and consultancy packages tailored to 
@@ -97,7 +102,7 @@
 							</div>
 						</a>
 						<a href="" class="DM">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-signal icon-DM icon-DM-img" aria-hidden="true"></i>
 								<h3>Digital Marketing</h3>
 								<p>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</p>
@@ -105,9 +110,9 @@
 							</div>
 						</a>
 					</div>
-					<div class="row center row-4">
+					<div class="center our-services-bottom gap">
 						<a href="" class="TS">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-phone icon-TS icon-TS-img" aria-hidden="true"></i>
 								<h3>Telecoms Services</h3>
 								<p>Business telephony solutions including mobile &amp; connectivity solutions</p>
@@ -115,7 +120,7 @@
 							</div>
 						</a>
 						<a href="" class="WD">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-code icon-WD icon-WD-img" aria-hidden="true"></i>
 								<h3>Web Design</h3>
 								<p>User-centric design for businesses looking to make a lasting impression</p>
@@ -123,7 +128,7 @@
 							</div>
 						</a>
 						<a href="" class="CS">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-shield-alt icon-CS icon-CS-img"></i>
 								<h3>Cyber Security</h3>
 								<p>Prevention, testing, consultancy &amp; breach management services</p>
@@ -131,7 +136,7 @@
 							</div>
 						</a>
 						<a href="" class="DC">
-							<div class="col item-services">
+							<div class="item-services">
 								<i class="fa fa-graduation-cap icon-DC icon-DC-img" aria-hidden="true"></i>
 								<h3>Developer Training</h3>
 								<p>Web design &amp; software traning courses designed to secure a job in tech</p>
@@ -139,6 +144,9 @@
 							</div>
 						</a>
 					</div>
+				</div>
+				<div class="our-services-footer">
+					<a href="#" class="view-all">View All <i class="fa fa-arrow-right"></i></a>
 				</div>
 			</div>
 			<div>
@@ -238,7 +246,7 @@
 					<a href="#" class="view-all">View All <i class="fa fa-arrow-right"></i></a>
 				</div>
 			</div>
-			<div id="Subscribe" >
+			<div  id="Subscribe" >
 				<form class="margin ">
 					<div class="">
 						<h2 class="h2-left start">Email Newsletter Sign-Up</h2>
@@ -263,7 +271,7 @@
 					</div>
 				</form>
 			</div>
-		</main>
+		</main> 
 		
 		<footer>
 			<div class="container-footer center">
