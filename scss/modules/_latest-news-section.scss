@@ -1,0 +1,75 @@
+.container-news{
+    margin-bottom: 50px;
+    &-1{
+        box-shadow: 0 0 5px #bebebe;
+        max-height:110vh;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+        flex:1 1 100%;
+    }
+    &-2{
+        box-shadow: 0 0 5px #bebebe;
+        max-height:110vh;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+        flex:1 1 100%;
+    }
+    &-3{
+        box-shadow: 0 0 5px #bebebe;
+        max-height:110vh;
+        border-radius: 0 0 2% 2%;
+        text-align: left;
+        flex:1 1 100%;
+    }
+}
+.news-item{
+    &-1{
+        &-btn{
+            background-color: $first-news;
+            color:$secondary-color;
+            border-bottom: 5px 5px;
+            padding: 10px;
+            border-style: none;
+            align-self: start;
+        }
+        color:$first-news;
+    }
+    &-2{
+        &-btn{
+            background-color: $second-news;
+            color:$secondary-color;
+            border-bottom: 5px 5px;
+            padding: 10px;
+            border-style: none;
+            align-self: start;
+        }
+        color:$second-news;
+    }
+    &-3{
+        &-btn{
+            background-color: $third-news;
+            color:$secondary-color;
+            border-bottom: 5px 5px;
+            padding: 10px;
+            border-style: none;
+            align-self: start;
+        }
+        color: $third-news
+    }
+}
+.images{
+    width: 100%;
+}
+
+.posted{
+    padding-top: 20px;
+    border-top: solid 1px grey;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.move-up{
+    @include move-up();
+}

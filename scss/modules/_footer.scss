@@ -1,0 +1,24 @@
+footer{
+    background-color:$primary-color;
+    color: $secondary-color;
+}
+.footer-links{
+    color:$secondary-color;
+    &:visited{
+        color: $secondary-color;
+    }
+}
+.copyright{
+    padding-top: 5px;
+    border-top: solid $secondary-color 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li>a{
+    color: $secondary-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,22 @@
+#Subscribe{
+    background-color: lightgray;
+}
+.required{
+    color:red;
+}
+input[type="checkbox"]{
+    display:none;
+    &:checked + .label::before{
+        font-family: "Font Awesome 6 Free";
+        content: "\f14a";
+    }
+}
+.label{
+    &::before{
+        font-family: "Font Awesome 6 Free";
+        font-style: regular;
+        font-size: 2em;
+        content: "\f0c8";
+        display: inline-block;
+    }
+}

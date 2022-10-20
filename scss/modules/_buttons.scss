@@ -60,23 +60,33 @@ button {
         margin-bottom: 5px;
         padding: 15px;
     }
+    &-banner{
+        background-color: $hoki;
+        padding: 20px;
+        justify-self: start;
+        align-self: start;
+        width:200px;
+    }
     &-inverse{
         background-color:#272936;
         color: $secondary-color;
         padding: 20px;
         align-self: flex-start;
+        margin-bottom: 20px;
     }
     &-google{
         background-color:$dodger-blue;
         color: $secondary-color;
         padding: 20px;
         margin-top: auto;
+        margin-bottom: 20px;
     }
     &-trustpilot{
         background-color:$jade;
         color: $secondary-color;
         padding: 20px;
         margin-top: auto;
+        margin-bottom: 20px;
     }
     &-subscribe{
         background-color: $primary-color;
@@ -88,10 +98,4 @@ button {
             background-color: darken($primary-color,10%);
         }
     }
-    
-    
-}
-.ReadMore{
-    justify-content: center;
-    align-self: flex-start;
 }
