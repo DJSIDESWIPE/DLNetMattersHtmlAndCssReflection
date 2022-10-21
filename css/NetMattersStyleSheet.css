@@ -1514,11 +1514,16 @@ footer {
 }
 
 .copyright .end {
+  display: flex;
   flex: 0 0 20%;
   justify-self: end;
   margin-left: auto;
-  margin-right: 2em;
   align-self: center;
+}
+
+.copyright .end * {
+  justify-self: space-around;
+  flex: 0 0 20%;
 }
 
 li > a {
