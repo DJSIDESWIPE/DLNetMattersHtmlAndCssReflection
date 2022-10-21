@@ -1,0 +1,191 @@
+nav{
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-color;
+  & *{
+      margin: 0;
+      padding: 0;
+  }
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  &:hover{
+      text-decoration: none;
+  }
+  &:visited{
+      color: white;
+  }
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  flex: 0 0 14%;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  & ul li a {
+      text-decoration: none;
+  }
+  & ul li a:hover {
+      text-decoration: underline;
+  }
+}
+nav> ul{
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 100%;
+  text-align: center;
+  & *{
+      background: none;
+  }
+}
+nav ul li ul{
+  display: none;
+  position: relative;
+}
+nav> ul >.navbar-bs:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $hoki;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-bs:hover {
+  background-color:darken($hoki, 10%) ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-it:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $dodger-blue;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-it:hover {
+  background-color:darken($dodger-blue, 10%) ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-dm:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $jade;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-dm:hover {
+  background-color:darken($jade, 10%) ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-ts:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $valencia;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-ts:hover {
+  background-color:darken($valencia, 10%) ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-wd:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $wisteria;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-wd:hover {
+  background-color:darken($wisteria, 10%) ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-cs:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $radical-red;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-cs:hover {
+  background-color:darken($radical-red, 10%) ;
+  & i{
+      color:white;
+  }
+}
+nav> ul >.navbar-dc:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $valencia;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+  & li{
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+}
+nav ul .navbar-dc:hover {
+  background-color:darken($valencia, 10%) ;
+  & i{
+      color:white;
+  }
+}

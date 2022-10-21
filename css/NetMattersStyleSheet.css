@@ -469,7 +469,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .navbar {
+  nav {
     display: none;
   }
   .container-banner {
@@ -610,6 +610,235 @@ main, footer, form {
 .pushtop {
   margin-top: 0;
   margin-bottom: auto;
+}
+
+nav {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #333645;
+}
+
+nav * {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  flex: 0 0 14%;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav ul li ul li a {
+  text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+  text-decoration: underline;
+}
+
+nav > ul {
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+nav > ul * {
+  background: none;
+}
+
+nav ul li ul {
+  display: none;
+  position: relative;
+}
+
+nav > ul > .navbar-bs:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #67809f;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-bs:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-bs:hover {
+  background-color: #526781;
+}
+
+nav ul .navbar-bs:hover i {
+  color: white;
+}
+
+nav > ul > .navbar-it:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #4387f6;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-it:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-it:hover {
+  background-color: #1268f4;
+}
+
+nav ul .navbar-it:hover i {
+  color: white;
+}
+
+nav > ul > .navbar-dm:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #00b67b;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-dm:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-dm:hover {
+  background-color: #008359;
+}
+
+nav ul .navbar-dm:hover i {
+  color: white;
+}
+
+nav > ul > .navbar-ts:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #d64541;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-ts:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-ts:hover {
+  background-color: #bc2c28;
+}
+
+nav ul .navbar-ts:hover i {
+  color: white;
+}
+
+nav > ul > .navbar-wd:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #926fb1;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-wd:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-wd:hover {
+  background-color: #79539a;
+}
+
+nav ul .navbar-wd:hover i {
+  color: white;
+}
+
+nav > ul > .navbar-cs:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f62459;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-cs:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-cs:hover {
+  background-color: #de093f;
+}
+
+nav ul .navbar-cs:hover i {
+  color: white;
+}
+
+nav > ul > .navbar-dc:hover ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #d64541;
+  border-radius: 0 0 8px 8px;
+  top: 160px;
+  width: 14%;
+  z-index: 2;
+}
+
+nav > ul > .navbar-dc:hover ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul .navbar-dc:hover {
+  background-color: #bc2c28;
+}
+
+nav ul .navbar-dc:hover i {
+  color: white;
 }
 
 button {
