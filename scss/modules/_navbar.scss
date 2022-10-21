@@ -53,7 +53,7 @@ nav> ul >.navbar-bs:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $hoki;
+  background-color:darken($hoki, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -64,7 +64,7 @@ nav> ul >.navbar-bs:hover ul {
   }
 }
 nav ul .navbar-bs:hover {
-  background-color:darken($hoki, 10%) ;
+   background-color: $hoki;
   & i{
       color:white;
   }
@@ -73,7 +73,7 @@ nav> ul >.navbar-it:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $dodger-blue;
+  background-color:darken($dodger-blue, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -84,7 +84,7 @@ nav> ul >.navbar-it:hover ul {
   }
 }
 nav ul .navbar-it:hover {
-  background-color:darken($dodger-blue, 10%) ;
+   background-color: $dodger-blue;
   & i{
       color:white;
   }
@@ -93,7 +93,7 @@ nav> ul >.navbar-dm:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $jade;
+  background-color:darken($jade, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -104,7 +104,7 @@ nav> ul >.navbar-dm:hover ul {
   }
 }
 nav ul .navbar-dm:hover {
-  background-color:darken($jade, 10%) ;
+   background-color: $jade;
   & i{
       color:white;
   }
@@ -113,7 +113,7 @@ nav> ul >.navbar-ts:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $valencia;
+  background-color:darken($valencia, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -124,7 +124,7 @@ nav> ul >.navbar-ts:hover ul {
   }
 }
 nav ul .navbar-ts:hover {
-  background-color:darken($valencia, 10%) ;
+  background-color:$valencia ;
   & i{
       color:white;
   }
@@ -133,7 +133,7 @@ nav> ul >.navbar-wd:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $wisteria;
+  background-color:darken($wisteria, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -144,7 +144,7 @@ nav> ul >.navbar-wd:hover ul {
   }
 }
 nav ul .navbar-wd:hover {
-  background-color:darken($wisteria, 10%) ;
+  background-color: $wisteria;
   & i{
       color:white;
   }
@@ -153,7 +153,7 @@ nav> ul >.navbar-cs:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $radical-red;
+  background-color:darken($radical-red, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -164,7 +164,7 @@ nav> ul >.navbar-cs:hover ul {
   }
 }
 nav ul .navbar-cs:hover {
-  background-color:darken($radical-red, 10%) ;
+   background-color: $radical-red;
   & i{
       color:white;
   }
@@ -173,7 +173,7 @@ nav> ul >.navbar-dc:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: $valencia;
+  background-color:darken($valencia, 10%);
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -184,7 +184,7 @@ nav> ul >.navbar-dc:hover ul {
   }
 }
 nav ul .navbar-dc:hover {
-  background-color:darken($valencia, 10%) ;
+  background-color:$valencia ;
   & i{
       color:white;
   }

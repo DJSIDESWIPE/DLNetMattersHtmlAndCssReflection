@@ -677,7 +677,7 @@ nav > ul > .navbar-bs:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #67809f;
+  background-color: #526781;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -690,7 +690,7 @@ nav > ul > .navbar-bs:hover ul li {
 }
 
 nav ul .navbar-bs:hover {
-  background-color: #526781;
+  background-color: #67809f;
 }
 
 nav ul .navbar-bs:hover i {
@@ -701,7 +701,7 @@ nav > ul > .navbar-it:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #4387f6;
+  background-color: #1268f4;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -714,7 +714,7 @@ nav > ul > .navbar-it:hover ul li {
 }
 
 nav ul .navbar-it:hover {
-  background-color: #1268f4;
+  background-color: #4387f6;
 }
 
 nav ul .navbar-it:hover i {
@@ -725,7 +725,7 @@ nav > ul > .navbar-dm:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #00b67b;
+  background-color: #008359;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -738,7 +738,7 @@ nav > ul > .navbar-dm:hover ul li {
 }
 
 nav ul .navbar-dm:hover {
-  background-color: #008359;
+  background-color: #00b67b;
 }
 
 nav ul .navbar-dm:hover i {
@@ -749,7 +749,7 @@ nav > ul > .navbar-ts:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #d64541;
+  background-color: #bc2c28;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -762,7 +762,7 @@ nav > ul > .navbar-ts:hover ul li {
 }
 
 nav ul .navbar-ts:hover {
-  background-color: #bc2c28;
+  background-color: #d64541;
 }
 
 nav ul .navbar-ts:hover i {
@@ -773,7 +773,7 @@ nav > ul > .navbar-wd:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #926fb1;
+  background-color: #79539a;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -786,7 +786,7 @@ nav > ul > .navbar-wd:hover ul li {
 }
 
 nav ul .navbar-wd:hover {
-  background-color: #79539a;
+  background-color: #926fb1;
 }
 
 nav ul .navbar-wd:hover i {
@@ -797,7 +797,7 @@ nav > ul > .navbar-cs:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #f62459;
+  background-color: #de093f;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -810,7 +810,7 @@ nav > ul > .navbar-cs:hover ul li {
 }
 
 nav ul .navbar-cs:hover {
-  background-color: #de093f;
+  background-color: #f62459;
 }
 
 nav ul .navbar-cs:hover i {
@@ -821,7 +821,7 @@ nav > ul > .navbar-dc:hover ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #d64541;
+  background-color: #bc2c28;
   border-radius: 0 0 8px 8px;
   top: 160px;
   width: 14%;
@@ -834,7 +834,7 @@ nav > ul > .navbar-dc:hover ul li {
 }
 
 nav ul .navbar-dc:hover {
-  background-color: #bc2c28;
+  background-color: #d64541;
 }
 
 nav ul .navbar-dc:hover i {
