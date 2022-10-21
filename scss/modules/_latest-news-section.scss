@@ -31,6 +31,7 @@
             padding: 10px;
             border-style: none;
             align-self: start;
+            margin-left: 1em;
         }
         color:$first-news;
     }
@@ -42,6 +43,7 @@
             padding: 10px;
             border-style: none;
             align-self: start;
+            margin-left: 1em;
         }
         color:$second-news;
     }
@@ -53,6 +55,7 @@
             padding: 10px;
             border-style: none;
             align-self: start;
+            margin-left: 1em;
         }
         color: $third-news
     }
@@ -68,6 +71,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .move-up{

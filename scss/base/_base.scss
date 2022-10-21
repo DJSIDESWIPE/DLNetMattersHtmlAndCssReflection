@@ -500,13 +500,7 @@
         }
     }
 }
-@media screen and (max-width:921px) {
-    
-    .banner{
-        margin-top: 60px;
-    }
 
-}
 @media screen and (max-width:991px){
     nav{
         display: none;
@@ -519,7 +513,9 @@
             text-align: center;
             min-height:75vh;
             max-height: fit-content;
-            flex:1 1 95%;
+            align-content: center;
+            justify-content: center;
+            flex:0 0 95%;
             &>.h2{
                 font-size:1.25em;
             }
@@ -531,6 +527,11 @@
             }
         }
     }
+    .container-inverse {
+        & &-welcome h2{
+            padding-top: 20px;
+        }
+    }
 
 }
 .awards-row{
@@ -539,6 +540,7 @@
     flex:0 0 95%;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 20px;
     &>.award-images{
         position: relative;
         display: inline-block;
@@ -565,7 +567,7 @@ body {
     margin-right: 0px;
     color:$primary-color;
 }
-p,h2,h3{
+p,h3{
     margin-left: 15px;
 }
 li{
@@ -611,7 +613,7 @@ main,footer,form{
 }
 
 #h2-left{
-    text-align: left;
+    text-align: left
 }
 
 .gap {

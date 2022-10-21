@@ -462,12 +462,6 @@
   }
 }
 
-@media screen and (max-width: 921px) {
-  .banner {
-    margin-top: 60px;
-  }
-}
-
 @media screen and (max-width: 991px) {
   nav {
     display: none;
@@ -481,7 +475,9 @@
     text-align: center;
     min-height: 75vh;
     max-height: fit-content;
-    flex: 1 1 95%;
+    align-content: center;
+    justify-content: center;
+    flex: 0 0 95%;
   }
   .container-banner > .banner-div > .h2 {
     font-size: 1.25em;
@@ -492,6 +488,9 @@
   .container-banner > .banner-div > .btn-banner {
     align-self: center;
   }
+  .container-inverse .container-inverse-welcome h2 {
+    padding-top: 20px;
+  }
 }
 
 .awards-row {
@@ -500,6 +499,7 @@
   flex: 0 0 95%;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .awards-row > .award-images {
@@ -530,7 +530,7 @@ body {
   color: #333645;
 }
 
-p, h2, h3 {
+p, h3 {
   margin-left: 15px;
 }
 
@@ -866,12 +866,6 @@ button {
   cursor: pointer;
 }
 
-.cookie-btn {
-  margin-top: auto;
-  padding: 10px;
-  border: none;
-}
-
 .accept {
   background-color: #926fb1;
 }
@@ -1071,6 +1065,8 @@ i {
   color: white;
   display: flex;
   margin-top: 0;
+  justify-content: center;
+  align-content: center;
 }
 
 .container-banner > .banner-div {
@@ -1128,7 +1124,7 @@ i {
 }
 
 .item-services > button {
-  width: 50%;
+  width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1408,6 +1404,7 @@ i {
   padding: 10px;
   border-style: none;
   align-self: start;
+  margin-left: 1em;
 }
 
 .news-item-2 {
@@ -1421,6 +1418,7 @@ i {
   padding: 10px;
   border-style: none;
   align-self: start;
+  margin-left: 1em;
 }
 
 .news-item-3 {
@@ -1434,6 +1432,7 @@ i {
   padding: 10px;
   border-style: none;
   align-self: start;
+  margin-left: 1em;
 }
 
 .images {
@@ -1447,6 +1446,7 @@ i {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .move-up {
@@ -1504,6 +1504,21 @@ footer {
   border-top: solid white 1px;
   margin-left: 10px;
   margin-right: 10px;
+  display: flex;
+}
+
+.copyright .start {
+  flex: 0 0 75%;
+  justify-self: start;
+  align-self: center;
+}
+
+.copyright .end {
+  flex: 0 0 20%;
+  justify-self: end;
+  margin-left: auto;
+  margin-right: 2em;
+  align-self: center;
 }
 
 li > a {

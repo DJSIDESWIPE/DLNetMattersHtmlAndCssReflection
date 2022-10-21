@@ -5,6 +5,8 @@
     color: $secondary-color;
     display: flex;
     margin-top: 0;
+    justify-content: center;
+    align-content: center;
     &>.banner-div{
         flex: 1 1 100%;
         &>.banner-h2{
