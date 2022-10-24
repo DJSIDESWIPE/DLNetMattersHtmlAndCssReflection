@@ -1,29 +1,50 @@
 .container-news{
     margin-bottom: 50px;
+    & * {
+        & div a div{
+            &:first-child {
+                margin-top: 20px;
+                flex: 0 0 24%;
+            }
+            & .news-info {
+                margin-top: auto;
+                flex: 0 0 24%;
+                justify-self: end;
+                align-self: end;
+                
+            }
+            & button {
+                flex: 0 0 24%;
+            }
+        }  
+    }
     &-1{
         box-shadow: 0 0 5px #bebebe;
         max-height:110vh;
         border-radius: 0 0 2% 2%;
         text-align: left;
-        flex:1 1 100%;
+        flex:0 0 100%;
+        
     }
     &-2{
         box-shadow: 0 0 5px #bebebe;
         max-height:110vh;
         border-radius: 0 0 2% 2%;
         text-align: left;
-        flex:1 1 100%;
+        flex:0 0 100%;
+        
     }
     &-3{
         box-shadow: 0 0 5px #bebebe;
         max-height:110vh;
         border-radius: 0 0 2% 2%;
         text-align: left;
-        flex:1 1 100%;
+        flex:0 0 100%;
     }
 }
 .news-item{
     &-1{
+        margin-bottom: auto;
         &-btn{
             background-color: $first-news;
             color:$secondary-color;
@@ -36,6 +57,7 @@
         color:$first-news;
     }
     &-2{
+        margin-bottom: auto;
         &-btn{
             background-color: $second-news;
             color:$secondary-color;
@@ -48,6 +70,7 @@
         color:$second-news;
     }
     &-3{
+        margin-bottom: auto;
         &-btn{
             background-color: $third-news;
             color:$secondary-color;
@@ -72,6 +95,17 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    & img{
+        flex: 0 0 20%;
+        justify-content: center;
+        align-self: center;
+        margin: auto;
+        height: 50px;
+        width: 50px;
+    }
+    & p {
+        flex: 0 0 70%;
+    }
 }
 
 .move-up{

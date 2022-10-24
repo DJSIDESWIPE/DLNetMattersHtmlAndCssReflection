@@ -129,7 +129,7 @@
             order:5;
             flex: 0 0 100%;
             align-self: center;
-            margin-bottom: 20px;
+            margin-bottom: 0;
 
             display:inline-block;
             position: relative;
@@ -153,6 +153,15 @@
     .logo-row{
         &>*{
             display: none;
+        }
+    }
+    .container-banner{
+        text-align: center;
+        .banner-div{
+            margin-bottom: 10px;
+            & > p{
+                margin-left: -15px;
+            }
         }
     }
 }
@@ -237,6 +246,19 @@
             flex:0 0 10%;
         }
 
+    }
+
+    .container-banner{
+        min-height: 50vh;
+        max-height: 75vh;
+        text-align: center;
+        align-items: center;
+        .banner-div{
+            margin-bottom: 10px;
+            & > p{
+                margin-left: -15px;
+            }
+        }
     }
 }
 @media screen and (min-width:992px) and (max-width:1259px) {
@@ -499,34 +521,24 @@
             }
         }
     }
+
+    .container-banner {
+        height:75vh;
+        & .banner-div{
+            margin-top: 50px;
+            margin-bottom: auto;
+            & p{
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:991px){
     nav{
         display: none;
     }
-    .container-banner{
-        height: 100%;
-        &>.banner-div{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            min-height:75vh;
-            max-height: fit-content;
-            align-content: center;
-            justify-content: center;
-            flex:0 0 95%;
-            &>.h2{
-                font-size:1.25em;
-            }
-            &>.p{
-                font-size: 1em;
-            }
-            &>.btn-banner{
-                align-self: center;
-            }
-        }
-    }
+    
     .container-inverse {
         & &-welcome h2{
             padding-top: 20px;

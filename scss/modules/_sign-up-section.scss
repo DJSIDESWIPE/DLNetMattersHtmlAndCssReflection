@@ -13,10 +13,15 @@ input[type="checkbox"]{
 }
 .label{
     &::before{
+        padding: 5px;
+        margin-right: 5px;
         font-family: "Font Awesome 6 Free";
         font-style: regular;
         font-size: 2em;
         content: "\f0c8";
         display: inline-block;
     }
+}
+.privacy-policy{
+    text-decoration: underline;
 }
