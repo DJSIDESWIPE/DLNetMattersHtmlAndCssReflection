@@ -2,15 +2,14 @@
     margin-bottom: 50px;
     & * {
         & div a div{
+            justify-content: space-between;
+            justify-items: space-between;
             &:first-child {
                 margin-top: 20px;
                 flex: 0 0 24%;
             }
             & .news-info {
-                margin-top: auto;
                 flex: 0 0 24%;
-                justify-self: end;
-                align-self: end;
                 
             }
             & button {
