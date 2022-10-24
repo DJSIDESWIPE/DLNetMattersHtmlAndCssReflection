@@ -132,7 +132,8 @@
     color: #444;
     background: none;
     position: absolute;
-    right: 6px;
+    right: -5px;
+    margin-top: -55px;
   }
   .container-header > .heading-search > .search-box {
     border-radius: 4px;
