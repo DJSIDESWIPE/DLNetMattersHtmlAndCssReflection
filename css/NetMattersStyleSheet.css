@@ -1134,6 +1134,9 @@ i {
     flex: 0 0 25%;
     justify-content: end;
   }
+  .container-header > .heading-search > .btn-search {
+    font-size: .85em;
+  }
   .container-header > i {
     display: none;
   }
