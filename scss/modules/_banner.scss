@@ -22,6 +22,7 @@
         }
     }
 }
+//affects screens that are smaller than 766px
 @media screen and (max-width:766px){
     
     .container-banner{
@@ -34,6 +35,7 @@
         }
     }
 }
+//affects screens that are larger than 767px but smaller than 991px
 @media screen and (min-width:767px) and (max-width:991px){
     .container-banner{
         min-height: 50vh;
@@ -48,6 +50,7 @@
         }
     }
 }
+//affects screens that are larger than 922px
 @media screen and (min-width:922px){
     .container-banner {
         height:75vh;

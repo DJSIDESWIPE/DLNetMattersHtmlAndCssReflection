@@ -133,7 +133,7 @@
         @include setcolors($valencia,$secondary-color);
     }
 }
-
+//affects screens that are  smaller than 766px
 @media screen and (max-width:766px){
     .container-our-services{
         &>.our-services-header{
@@ -158,6 +158,7 @@
         }
     }
 }
+//affects screens that are larger than 767px
 @media screen and (min-width:767px){
     .container-our-services{
         
@@ -168,6 +169,7 @@
         }
     }
 }
+//affects screens that are larger than 767px but smaller than 991px
 @media screen and (min-width:767px) and (max-width:991px){
     .container-our-services{
         &>*>.our-services-top{
@@ -186,6 +188,7 @@
         }
     }
 }
+//affects screens that are larger than 992px but smaller than 1259px
 @media screen and (min-width:992px) and (max-width:1259px) {
     .container-our-services{
         &>*>.our-services-top{
@@ -209,6 +212,7 @@
         }
     }
 }
+//affects screens that are larger than 1260px
 @media screen and (min-width:1260px){
     .container-our-services{
         &>*>.our-services-top{

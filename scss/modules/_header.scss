@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     display: flex;
 }
-
+//affects screens that are smaller than 766px
 @media screen and (max-width:766px){
     .container-header{
         display: flex;
@@ -57,6 +57,7 @@
         }
     }
 }
+//affects screens that are larger than 767px smaller than 991px
 @media screen and (min-width:767px) and (max-width:991px){
     .container-header{
         display: flex;
@@ -91,6 +92,7 @@
         }
     }
 }
+//affects screens that are larger than 992px smaller than 1259px
 @media screen and (min-width:992px) and (max-width:1259px) {
     .container-header{
         display: flex;
@@ -136,6 +138,7 @@
         }
     }
 }
+//affects screens that are larger than 1260px
 @media screen and (min-width:1260px){
     .container-header{
         display: flex;

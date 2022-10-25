@@ -190,6 +190,7 @@ nav ul .navbar-dc:hover {
       color:white;
   }
 }
+//affects screens that are larger than 922px
 @media screen and (min-width:922px){
   .container-navbar{
       display: flex;
@@ -209,6 +210,7 @@ nav ul .navbar-dc:hover {
       }
   }
 }
+//affects screens that are smaller than 991px
 @media screen and (max-width:991px){
   nav{
       display: none;

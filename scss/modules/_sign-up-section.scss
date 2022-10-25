@@ -25,6 +25,7 @@ input[type="checkbox"]{
 .privacy-policy{
     text-decoration: underline;
 }
+//affects screens that are larger than 922px
 @media screen and (min-width:922px){
     .container-sign-up{
         display: flex;

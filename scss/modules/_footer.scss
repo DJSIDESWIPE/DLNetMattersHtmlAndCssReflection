@@ -40,6 +40,7 @@ li>a{
         text-decoration: underline;
     }
 }
+//affects screens that are smaller than 496px
 @media screen and (max-width:496px){
     .container-footer{
         display: flex;
@@ -47,6 +48,7 @@ li>a{
         flex-wrap: wrap;
     }
 }
+//affects screens that are larger than 497px smaller than 721px
 @media screen and (min-width:497px) and (max-width:721px) {
     .container-footer{
         display: flex;
@@ -68,8 +70,8 @@ li>a{
         
     }
 }
+//affects screens that are larger than 722px smaller than 1259px
 @media screen and (min-width:722px) and (max-width:1259px){
-    //footer
     .container-footer{
         display: flex;
         flex-direction: row;
@@ -98,8 +100,8 @@ li>a{
         } 
     }
 }
+//affects screens that are smaller than 1260px
 @media screen and (min-width:1260px){
-    //footer, Our services, latest news
     .container-footer{
         column-count: 5;
         flex-direction: row;

@@ -78,6 +78,7 @@
 .move-up{
     @include move-up();
 }
+//affect screens smaller than 766px
 @media screen and (max-width:766px){
     .container-news{
         display: flex;
@@ -97,6 +98,7 @@
         }
     }
 }
+//affect screen larger than 767px but smaller than 1259px
 @media screen and (min-width:767px) and (max-width:1259px){
     .container-news{
         display: flex;
@@ -141,6 +143,7 @@
         }
     }  
 }
+//afect screens larger than 1260px
 @media screen and (min-width:1260px){
     .container-news{
         &>.news-header{
