@@ -18,3 +18,45 @@
 .fa-star{
     color:#FFB247;
 }
+@media screen and (min-width:617px) and (max-width:921px){
+    //inverse section
+    .inverse-row{
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 100%;
+        &>*{
+            flex: 0 0 45%;
+        }
+    }
+}
+@media screen and (min-width:1260px){
+    .inverse-row{
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 100%;
+        &>*{
+            flex: 0 0 45%;
+        }
+    }
+}
+@media screen and (min-width:922px){
+    .container-inverse{
+        display: flex;
+        flex-direction: row;
+        &>.container-inverse-welcome{
+            display: flex;
+            flex-direction: column;
+        }
+        &>.container-inverse-reviews{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .container-inverse {
+        & &-welcome h2{
+            padding-top: 20px;
+        }
+    }
+}

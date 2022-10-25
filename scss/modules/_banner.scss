@@ -22,3 +22,41 @@
         }
     }
 }
+@media screen and (max-width:766px){
+    
+    .container-banner{
+        text-align: center;
+        .banner-div{
+            margin-bottom: 10px;
+            & > p{
+                margin-left: -15px;
+            }
+        }
+    }
+}
+@media screen and (min-width:767px) and (max-width:991px){
+    .container-banner{
+        min-height: 50vh;
+        max-height: 75vh;
+        text-align: center;
+        align-items: center;
+        .banner-div{
+            margin-bottom: 10px;
+            & > p{
+                margin-left: -15px;
+            }
+        }
+    }
+}
+@media screen and (min-width:922px){
+    .container-banner {
+        height:75vh;
+        & .banner-div{
+            margin-top: 50px;
+            margin-bottom: auto;
+            & p{
+                margin-left: 0;
+            }
+        }
+    }
+}

@@ -25,3 +25,16 @@ input[type="checkbox"]{
 .privacy-policy{
     text-decoration: underline;
 }
+@media screen and (min-width:922px){
+    .container-sign-up{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        &>.container-sign-up-field{
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 50%;
+        }
+
+    }
+}

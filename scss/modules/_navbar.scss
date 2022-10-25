@@ -190,3 +190,27 @@ nav ul .navbar-dc:hover {
       color:white;
   }
 }
+@media screen and (min-width:922px){
+  .container-navbar{
+      display: flex;
+      &>.navbar{
+          display: flex;
+          flex: 0 0 95%;
+          &>.navbar-content{
+              display: flex;
+              flex-direction: column;
+              justify-self: space-evenly;
+              flex: 0 0 14%;
+              &>*{
+                  margin-left: auto;
+                  margin-right: auto;
+              }
+          }
+      }
+  }
+}
+@media screen and (max-width:991px){
+  nav{
+      display: none;
+  }
+}

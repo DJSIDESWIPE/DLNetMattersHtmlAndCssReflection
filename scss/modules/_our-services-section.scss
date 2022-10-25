@@ -133,3 +133,102 @@
         @include setcolors($valencia,$secondary-color);
     }
 }
+
+@media screen and (max-width:766px){
+    .container-our-services{
+        &>.our-services-header{
+            &>a{
+                display: none;
+            }
+        }
+        &>.our-services-footer{
+            display: flex;
+            justify-content: center;
+            flex: 0 0 100%;
+            margin-top: 10px;
+        }
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: column;
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+@media screen and (min-width:767px){
+    .container-our-services{
+        
+        &>.our-services-footer{
+            &>a{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width:767px) and (max-width:991px){
+    .container-our-services{
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: column;
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+@media screen and (min-width:992px) and (max-width:1259px) {
+    .container-our-services{
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: row;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 30%;
+            }
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 45%;
+            }
+        }
+    }
+}
+@media screen and (min-width:1260px){
+    .container-our-services{
+        &>*>.our-services-top{
+            display: flex;
+            flex-direction: row;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 32%;
+            }
+        }
+        &>*>.our-services-bottom{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &>*{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 23%;
+            }
+        }
+    }
+}
